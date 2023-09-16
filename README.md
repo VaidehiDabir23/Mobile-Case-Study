@@ -1,6 +1,6 @@
 # Case Study
 
-##Task Overview
+## Task Overview
 
 - This task achieves to set up an approval process, lookup filter, creation of custom objects and custom fields, autopopulating them using configuration privided by the Salesforce platform.
 - Further the task involves displaying the lightning web components, communication among them, fetching data from apex and displaying them in the LWC, handling errors and notifying users in case of errors using the friendly messages.
