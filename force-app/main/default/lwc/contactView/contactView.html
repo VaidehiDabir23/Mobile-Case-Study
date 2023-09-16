@@ -1,0 +1,32 @@
+<template>
+  <template if:true={showspinner}>
+    <lightning-spinner
+      alternative-text="Loading"
+      size="medium"
+    ></lightning-spinner>
+  </template>
+  <template if:false={showspinner}>
+    <lightning-card>
+      <h3 slot="title">Contacts for {accountName}</h3>
+      <p slot="actions">{numberOfContacts}</p>
+      <lightning-datatable
+        key-field="id"
+        data={contacts}
+        columns={columns}
+        onrowaction={handleRowAction}
+        hide-checkbox-column="true"
+        column-widths-mode="fixed"
+      >
+      </lightning-datatable>
+    </lightning-card>
+    <br />
+
+    <template if:true={editContact}>
+      <c-contact-edit
+        contact-id={contactId}
+        oncontactupdate={handleContactUpdate}
+        oncancelclicked={handleCancelClicked}
+      ></c-contact-edit>
+    </template>
+  </template>
+</template>
