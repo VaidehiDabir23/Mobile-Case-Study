@@ -1,18 +1,13 @@
-# Salesforce DX Project: Next Steps
+# Case Study
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+##Task Overview
 
-## How Do You Plan to Deploy Your Changes?
+- This task achieves to set up an approval process, lookup filter, creation of custom objects and custom fields, autopopulating them using configuration privided by the Salesforce platform.
+- Further the task involves displaying the lightning web components, communication among them, fetching data from apex and displaying them in the LWC, handling errors and notifying users in case of errors using the friendly messages.
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+## Post-deployment Steps
 
-## Configure Your Salesforce DX Project
-
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
-
-## Read All About It
-
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+- Assign the permission set named 'Sales and Contract Permission Set' to the user with which the testing is being done.
+- Make sure that the user who submits the service contract record for approval has a manager, who further can approve the request.
+- Activate the 'Contact List' page from the lightning app builder.
+- Edit the step 2 of the approval process and select a user who is the 'Head of sales' as the approver in this step. Since, the step with a user is not deployed, this additional step is required.
