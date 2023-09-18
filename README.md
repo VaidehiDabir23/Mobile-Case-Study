@@ -11,3 +11,7 @@
 - Make sure that the user who submits the service contract record for approval has a manager, who further can approve the request.
 - Activate the 'Contact List' page from the lightning app builder.
 - Edit the step 2 of the approval process and select a user who is the 'Head of sales' as the approver in this step. Since, the step with a user is not deployed, this additional step is required.
+
+## Result
+
+- The files ContactForm_DisabledSave.png and ContactForm_EnabledSave.png.
