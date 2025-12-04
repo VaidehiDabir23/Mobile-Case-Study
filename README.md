@@ -16,4 +16,4 @@ This section covers specific instructions that need to be followed to run this p
 
 
 
-- Please refer to the pdf document shared with the code folder to know details about Data Model, implementation etc.
+### Please refer to the pdf document shared with the code folder to know details about Data Model, implementation etc.
