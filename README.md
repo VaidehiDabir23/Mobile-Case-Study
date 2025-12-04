@@ -4,8 +4,7 @@
 
 - Lightning web component: Added to the case lightning record page and can further be added to any lightning record page
 - REST API: Retrieves the information of the product bought  by the contact  by using its UUID for the external systems
-- Data Validation: Makes sure that only one price is available for a product in a country
-Note: Data validation is implemented by considering the business context, although it wasn’t mentioned in the task.
+- Data Validation: Makes sure that only one price is available for a product in a country (Note: Data validation is implemented by considering the business context, although it wasn’t mentioned in the task.)
 
 ## Key Setup Instructions
 
