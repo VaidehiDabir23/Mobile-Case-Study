@@ -1,16 +1,19 @@
-# Case Study
+# Interview Task
 
-## Task Overview
+## Overview
 
-- This task achieves to set up an approval process, lookup filter, creation of custom objects and custom fields, autopopulating them using configuration privided by the Salesforce platform.
-- Further the task involves displaying the lightning web components, communication among them, fetching data from apex and displaying them in the LWC, handling errors and notifying users in case of errors using the friendly messages.
+- Lightning web component: Added to the case lightning record page and can further be added to any lightning record page
+- REST API: Retrieves the information of the product bought  by the contact  by using its UUID for the external systems
+- Data Validation: Makes sure that only one price is available for a product in a country
+Note: Data validation is implemented by considering the business context, although it wasn’t mentioned in the task.
 
-## Post-deployment Steps
+## Key Setup Instructions
 
-- Assign the permission set named 'Sales and Contract Permission Set' to the user with which the testing is being done.
-- Make sure that the user who submits the service contract record for approval has a manager, who further can approve the request.
-- Activate the 'Contact List' page from the lightning app builder.
-- Edit the step 2 of the approval process and select a user who is the 'Head of sales' as the approver in this step. Since, the step with a user is not deployed, this additional step is required.
+This section covers specific instructions that need to be followed to run this project. After deployment of the components in the folder, these steps need to be followed:
+
+- Give the access to all the newly created custom objects/fields/tab to your  user.
+- Add LWC ProductInfoComponent to the lightning record page of Case object from the folder Case_Lightning_Record_Page1. If there is any issue with the  deployment of this record page, you can add  the LWC to any case existing record page as  it is exposed to it.
+- For testing the API, a connected app can be created in the org and can be tested using tools such as Postman. I have also created one in my  org. I can share the required details such as endpoint, client Id and secret,  if needed. 
 
 ## Result
 
